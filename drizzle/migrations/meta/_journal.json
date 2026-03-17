@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1773672944020,
+      "tag": "0000_mvp_init",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1773676648408,
+      "tag": "0001_add_matchups",
+      "breakpoints": true
+    }
+  ]
+}

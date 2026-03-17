@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+src-tauri/target/
+
+# Logs and env
+*.log
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local DB
+*.db
+lol_ranked.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tauri / Rust
+*.rs.bk
+*.pdb
+
+# Lockfiles (optional: remove if you want to commit one for reproducible builds)
+# package-lock.json
+# yarn.lock

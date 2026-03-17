@@ -1,0 +1,201 @@
+/* Live Draft — dark blue / Hextech minimalist */
+
+.live-draft {
+  min-width: 1280px;
+  min-height: 720px;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(160deg, #0c1222 0%, #0f172a 40%, #0a0f1a 100%);
+  color: #c8d0dd;
+}
+
+.live-draft__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.15);
+}
+
+.live-draft__title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  letter-spacing: 0.02em;
+}
+
+.live-draft__connection {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.live-draft__error {
+  font-size: 0.75rem;
+  color: #f87171;
+  margin-right: 0.5rem;
+}
+
+.live-draft__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.live-draft__badge--connected {
+  background: rgba(0, 212, 255, 0.12);
+  color: #67e8f9;
+  border: 1px solid rgba(0, 212, 255, 0.25);
+}
+
+.live-draft__badge--disconnected {
+  background: rgba(148, 163, 184, 0.1);
+  color: #94a3b8;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.live-draft__port {
+  opacity: 0.85;
+  font-variant-numeric: tabular-nums;
+}
+
+.live-draft__session {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.live-draft__phase {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(0, 212, 255, 0.06);
+  border: 1px solid rgba(0, 212, 255, 0.15);
+  border-radius: 4px;
+  font-size: 0.9375rem;
+  color: #94a3b8;
+}
+
+.live-draft__timer {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+  color: #67e8f9;
+}
+
+.live-draft__teams {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.live-draft__team {
+  padding: 1rem 1.25rem;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(0, 212, 255, 0.12);
+  border-radius: 6px;
+}
+
+.live-draft__team-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.75rem 0;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.live-draft__champs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.live-draft__row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.live-draft__label {
+  flex-shrink: 0;
+  width: 3.5rem;
+  color: #64748b;
+}
+
+.live-draft__ids {
+  font-variant-numeric: tabular-nums;
+  color: #c8d0dd;
+  word-break: break-all;
+}
+
+.live-draft__idle {
+  padding: 2rem;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.9375rem;
+}
+
+.live-draft__idle p {
+  margin: 0;
+}
+
+.live-draft__pool {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(0, 212, 255, 0.15);
+}
+
+.live-draft__pool-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.75rem 0;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.live-draft__pool-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.5rem;
+}
+
+.live-draft__pool-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  border-radius: 4px;
+  font-size: 0.8125rem;
+}
+
+.live-draft__pool-name {
+  color: #c8d0dd;
+  font-weight: 500;
+}
+
+.live-draft__pool-meta {
+  color: #64748b;
+  font-variant-numeric: tabular-nums;
+}
+
+.live-draft__pool-empty {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #64748b;
+}

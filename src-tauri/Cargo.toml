@@ -1,0 +1,27 @@
+[package]
+name = "maximum-league-mvp"
+version = "0.1.0"
+description = "Maximum League — Live draft & top 3 recommender"
+authors = ["you"]
+edition = "2021"
+rust-version = "1.70"
+
+[lib]
+name = "maximum_league_mvp_lib"
+crate-type = ["lib", "cdylib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-shell = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+reqwest = { version = "0.12", features = ["json"] }
+base64 = "0.22"
+regex = "1"
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
